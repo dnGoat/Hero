@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bela Glow: maquiagem profissional para o dia a dia, noivas, formaturas e eventos. Agende seu horário online.">
+  <title>Bela Glow | Maquiagem profissional</title>
+
+  <!-- Fontes e ícones do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header">
+    <div class="container header-conteudo">
+      <a class="logo" href="#hero">Bela Glow</a>
+
+      <!-- Botão do menu (aparece só no celular) -->
+      <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="#hero">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#pacotes">Pacotes</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato" class="btn btn-primario btn-pequeno">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+
+        <!-- Coluna 1: textos, botões e vantagens -->
+        <div class="hero-texto">
+          <!-- Etiqueta acima do título -->
+          <span class="hero-etiqueta">Maquiagem e beleza</span>
+
+          <!-- Único h1 da página, com uma palavra destacada -->
+          <h1 class="hero-titulo">Realce sua beleza com uma maquiagem que é <span class="destaque">sua</span></h1>
+
+          <p class="hero-descricao">
+            Maquiagem profissional para o dia a dia e para ocasiões especiais,
+            com produtos de qualidade e atendimento sob medida.
+          </p>
+
+          <!-- Botões: classes combinadas (base + cor + tamanho) -->
+          <div class="hero-botoes">
+            <a href="#contato" class="btn btn-primario btn-grande">Agendar horário</a>
+            <a href="#servicos" class="btn btn-secundario btn-grande">Ver serviços</a>
+          </div>
+
+          <!-- Vantagens com ícones do Google -->
+          <ul class="hero-vantagens">
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+              Produtos de qualidade
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">face_retouching_natural</span>
+              Make para cada tipo de pele
+            </li>
+            <li>
+              <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+              Agendamento fácil
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 2: imagem -->
+        <div class="hero-imagem">
+          <img src="assets/hero.png"
+     alt="Paleta de sombras em tons de rosa, batons e um pincel de maquiagem sobre fundo rosado">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== NÚMEROS ===================== -->
+    <section class="numeros" aria-label="Resultados do estúdio">
+      <div class="container numeros-lista">
+        <div class="numero-item">
+          <strong>+1.600</strong>
+          <span>clientes atendidas</span>
+        </div>
+        <div class="numero-item">
+          <strong>67 Meses</strong>
+          <span>de experiência</span>
+        </div>
+        <div class="numero-item">
+          <strong>4,9/5</strong>
+          <span>avaliação média</span>
+        </div>
+        <div class="numero-item">
+          <strong>100%</strong>
+          <span>produtos testados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="secao" id="servicos">
+      <div class="container">
+        <header class="secao-topo">
+          <span class="secao-etiqueta">Serviços</span>
+          <h2 class="secao-titulo">Uma make para cada momento</h2>
+          <p class="secao-descricao">Do look leve do dia a dia à produção completa para o seu grande dia.</p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card">
+            <span class="card-icone material-symbols-outlined" aria-hidden="true">brush</span>
+            <h3>Maquiagem social</h3>
+            <p>Acabamento natural e duradouro para trabalho, jantares e encontros.</p>
+            <a href="#contato" class="card-link">Agendar</a>
+          </article>
+
+          <article class="card">
+            <span class="card-icone material-symbols-outlined" aria-hidden="true">favorite</span>
+            <h3>Noivas e madrinhas</h3>
+            <p>Teste de make incluso, para você chegar ao altar segura e radiante.</p>
+            <a href="#contato" class="card-link">Agendar</a>
+          </article>
+
+          <article class="card">
+            <span class="card-icone material-symbols-outlined" aria-hidden="true">school</span>
+            <h3>Formaturas</h3>
+            <p>Make pensada para fotos, que resiste à festa inteira.</p>
+            <a href="#contato" class="card-link">Agendar</a>
+          </article>
+
+          <article class="card">
+            <span class="card-icone material-symbols-outlined" aria-hidden="true">face_retouching_natural</span>
+            <h3>Skin prep</h3>
+            <p>Preparação da pele antes da make, para uma base leve e uniforme.</p>
+            <a href="#contato" class="card-link">Agendar</a>
+          </article>
+
+          <article class="card">
+            <span class="card-icone material-symbols-outlined" aria-hidden="true">visibility</span>
+            <h3>Design de sobrancelhas</h3>
+            <p>Modelagem de acordo com o formato do seu rosto.</p>
+            <a href="#contato" class="card-link">Agendar</a>
+          </article>
+
+          <article class="card">
+            <span class="card-icone material-symbols-outlined" aria-hidden="true">school</span>
+            <h3>Aulas de automaquiagem</h3>
+            <p>Aprenda técnicas e escolha os produtos certos para o seu tom de pele.</p>
+            <a href="#contato" class="card-link">Agendar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMO FUNCIONA ===================== -->
+    <section class="secao secao-fundo" id="como-funciona">
+      <div class="container">
+        <header class="secao-topo">
+          <span class="secao-etiqueta">Como funciona</span>
+          <h2 class="secao-titulo">Agendar é simples</h2>
+          <p class="secao-descricao">Em três passos você garante seu horário.</p>
+        </header>
+
+        <ol class="passos">
+          <li class="passo">
+            <span class="passo-numero">1</span>
+            <h3>Escolha o serviço</h3>
+            <p>Veja as opções e selecione a que combina com o seu evento.</p>
+          </li>
+          <li class="passo">
+            <span class="passo-numero">2</span>
+            <h3>Marque o horário</h3>
+            <p>Escolha o melhor dia e confirme pelo WhatsApp.</p>
+          </li>
+          <li class="passo">
+            <span class="passo-numero">3</span>
+            <h3>Aproveite sua make</h3>
+            <p>Chegue ao estúdio e relaxe, nós cuidamos do resto.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PACOTES ===================== -->
+    <section class="secao" id="pacotes">
+      <div class="container">
+        <header class="secao-topo">
+          <span class="secao-etiqueta">Pacotes</span>
+          <h2 class="secao-titulo">Escolha o seu pacote</h2>
+          <p class="secao-descricao">Valores de exemplo: troque pelos do seu projeto.</p>
+        </header>
+
+        <div class="pacotes-grid">
+          <article class="pacote">
+            <h3>Essencial</h3>
+            <p class="pacote-preco">R$ 120</p>
+            <ul class="pacote-lista">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Maquiagem social</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Skin prep básico</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Duração de 1h</li>
+            </ul>
+            <a href="#contato" class="btn btn-secundario btn-medio">Escolher</a>
+          </article>
+
+          <article class="pacote pacote-destaque">
+            <span class="pacote-selo">Mais escolhido</span>
+            <h3>Completo</h3>
+            <p class="pacote-preco">R$ 220</p>
+            <ul class="pacote-lista">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Maquiagem completa</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Design de sobrancelhas</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Retoque de cortesia</li>
+            </ul>
+            <a href="#contato" class="btn btn-primario btn-medio">Escolher</a>
+          </article>
+
+          <article class="pacote">
+            <h3>Noiva</h3>
+            <p class="pacote-preco">R$ 580</p>
+            <ul class="pacote-lista">
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Teste de make incluso</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Atendimento no local</li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check</span> Kit de retoque</li>
+            </ul>
+            <a href="#contato" class="btn btn-secundario btn-medio">Escolher</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section class="secao secao-fundo" id="depoimentos">
+      <div class="container">
+        <header class="secao-topo">
+          <span class="secao-etiqueta">Depoimentos</span>
+          <h2 class="secao-titulo">Quem já passou por aqui</h2>
+        </header>
+
+        <div class="cards-grid">
+          <blockquote class="depoimento">
+            <p>A make durou a festa inteira e ficou linda nas fotos. Recomendo muito!</p>
+            <footer><strong>Camila R.</strong> · Formanda</footer>
+          </blockquote>
+          <blockquote class="depoimento">
+            <p>O teste antes do casamento me deixou tranquila. Atendimento impecável.</p>
+            <footer><strong>Juliana S.</strong> · Noiva</footer>
+          </blockquote>
+          <blockquote class="depoimento">
+            <p>Aprendi a escolher a base certa para a minha pele. Valeu cada minuto.</p>
+            <footer><strong>Beatriz M.</strong> · Aula de automaquiagem</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="secao" id="faq">
+      <div class="container container-estreito">
+        <header class="secao-topo">
+          <span class="secao-etiqueta">Dúvidas</span>
+          <h2 class="secao-titulo">Perguntas frequentes</h2>
+        </header>
+
+        <details class="faq-item">
+          <summary>Preciso levar meus produtos?</summary>
+          <p>Não. O estúdio fornece todos os produtos e materiais higienizados.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Com quanto tempo de antecedência devo agendar?</summary>
+          <p>Para eventos comuns, 3 dias. Para noivas, recomendamos pelo menos 30 dias.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Vocês atendem fora do estúdio?</summary>
+          <p>Sim, no pacote Noiva e sob consulta para outros eventos.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Como funciona o cancelamento?</summary>
+          <p>Você pode remarcar sem custo com até 24 horas de antecedência.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ===================== CHAMADA FINAL ===================== -->
+    <section class="cta" id="contato">
+      <div class="container cta-conteudo">
+        <h2>Pronta para brilhar?</h2>
+        <p>Garanta seu horário e deixe a sua beleza em boas mãos.</p>
+        <div class="cta-botoes">
+          <a href="#" class="btn btn-claro btn-grande">Chamar no WhatsApp</a>
+          <a href="#servicos" class="btn btn-contorno btn-grande">Rever serviços</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container rodape-grid">
+      <div>
+        <a class="logo logo-claro" href="#hero">Bela Glow</a>
+        <p class="rodape-texto">Maquiagem profissional que valoriza a sua beleza natural.</p>
+      </div>
+
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#pacotes">Pacotes</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>(63) 90000-0000</li>
+          <li>contato@belaglow.com</li>
+          <li>Seg a sáb, 9h às 19h</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="rodape-direitos">© <span id="ano">2026</span> Bela Glow. Projeto escolar.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
